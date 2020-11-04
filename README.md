@@ -30,6 +30,7 @@ It downloads latest Splunk version as of 11/03/20.
 
 It has been tested on ubuntu 16.04 and CentOS 7
 
+*Check that $user env variable is set accordingly.
 
 
 # Contribute
