@@ -32,6 +32,8 @@ It has been tested on ubuntu 16.04 and CentOS 7
 
 *Check that $user env variable is set accordingly.
 
+*Make sure both splunkInstall.sh and include.sh are both on the same directory.
+
 
 # Contribute
 
