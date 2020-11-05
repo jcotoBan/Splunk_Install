@@ -3,7 +3,6 @@
 
 splunkInstall(){
 
-
 		if [ $1 = 'UF' ]; then
 
 		printf "\nUniversal Forwarder installation\n"
@@ -45,19 +44,20 @@ splunkInstall(){
 
 
 splunkRemove(){
+	
+					DIR="/opt/splunkforwarder"
 
-
-    		if [ $1 = 'UF' ]; then
+					if [ -d "$DIR" ]; then
     			     printf "\nRemoving current installation>>>>>>>\n"
         			/opt/splunkforwarder/bin/splunk stop
          			sudo rm ~/splunkforwarder-*
            			sudo rm -rf /opt/splunkforwarder
-         	else 
+         	else
          			 printf "\nRemoving current installation>>>>>>>\n"
          			 /opt/splunk/bin/splunk stop
    	    			 sudo rm ~/splunk-*
    	    			 sudo rm -rf /opt/splunk
    	    	fi
-   	 		
+
 
 }

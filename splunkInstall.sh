@@ -16,14 +16,14 @@ deployVar=`printf "${deployVar}" | tr '[a-z]' '[A-Z]'`
     		conf=`printf "${conf}" | tr '[A-Z]' '[a-z]'`
 
     		if [ $conf = 'y' ]; then
-    				splunkRemove deployVar
-    				splunkInstall deployVar
-    		else	
+    				splunkRemove $deployVar
+    				splunkInstall $deployVar
+    		else
     				printf "\nExiting....\n"
     		fi
 
   else
-    		splunkInstall deployVar
+    		splunkInstall $deployVar
 
 	 fi
 
@@ -38,19 +38,19 @@ deployVar=`printf "${deployVar}" | tr '[a-z]' '[A-Z]'`
 
     		if [ $conf = 'y' ]; then
 
-    				splunkRemove deployVar
-    				splunkInstall deployVar
+    				splunkRemove $deployVar
+    				splunkInstall $deployVar
 
-    		else	
+    		else
     				printf "\nExiting....\n"
     		fi
-      
+
  		 else
-    
-    		splunkInstall deployVar 
-      
+
+    		splunkInstall $deployVar
+
     fi
-    
+
  else
     printf "\nEnter a valid deployment\n"
  fi
