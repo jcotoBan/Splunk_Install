@@ -28,7 +28,7 @@ Unfortunately for now, there is no direct way to download the latest splunk vers
 
 It downloads latest Splunk version as of 11/03/20.
 
-It has been tested on ubuntu 16.04 and CentOS 7
+It has been tested on ubuntu and CentOS. * On ubuntu run as bash.
 
 *Check that $user env variable is set accordingly.
 
