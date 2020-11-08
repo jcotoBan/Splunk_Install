@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./include.sh
+source ./install.sh
 
 printf "\n"
 read -p "Enter a deployment type (UF for universal forwarder or ENT for Enterprise version) followed by enter> " deployVar
