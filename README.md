@@ -23,10 +23,16 @@ Basically you just run it on your Linux Box. After that the funcionality breaks 
 --> https://www.splunk.com/en_us/download/previous-releases/universalforwarder.html
 --> https://www.splunk.com/en_us/download/universal-forwarder.html
 
+
+![](images/uf.png)
+
 -->https://www.splunk.com/en_us/download/previous-releases.html
 -->https://www.splunk.com/en_us/download/splunk-enterprise.html
 
+![](images/ENT.png)
+
 This will create two files depending on the type of installation: uf_Repo.txt or enterprise_Repo.txt
+
 
 4- It will adjust any user permissions on $SPLUNK_HOME if required.
 
