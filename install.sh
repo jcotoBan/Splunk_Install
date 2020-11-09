@@ -65,9 +65,9 @@ splunkInstall(){
 
     	printf "\nInstalling Splunk>>>>>\n"
 
-			downloadLink="$(grep -P 'https.+"' enterprise_Repo.txt -o | grep $versionVar | tr '"' '\0')"
+			downloadLink="$(grep -P 'https.+"' enterprise_Repo.txt -o | grep -w $versionVar | tr '"' '\0')"
 
-			file="$(grep -P 'https.+"' enterprise_Repo.txt -o | grep $versionVar | grep -P 'splunk(?!.*splunk).+"' -o |  tr '"' ' ')"
+			file="$(grep -P 'https.+"' enterprise_Repo.txt -o | grep -w $versionVar | grep -P 'splunk(?!.*splunk).+"' -o |  tr '"' ' ')"
 
 		  wget -O ~/$file $downloadLink
 
