@@ -1,6 +1,10 @@
 # Splunk_Install
 A little Linux script to automate Splunk installation.
 
+# Current Version
+
+1.0.1
+
 # Description
 
 It provides an automated way of installing Splunk Universal Forwarders and Enteprise versions plus preparing some of the environment's work.
@@ -12,11 +16,19 @@ Basically you just run it on your Linux Box. After that the funcionality breaks 
 
 1-Ask the user for the type of deployment that is required to be installed. Valid options are UF(universal forwarder) or ENT(enterprise)
 
-2-Check if the there is a current Splunk deployment running and ask if remove it and proceed with a fresh installation or cancel.
+2-Check if the there is a current Splunk deployment running and ask if remove it and proceed with a fresh installation or cancel. * If you want to proceed as an upgrade stop manually splunk before running this script.
 
-3-Download Splunk tgz file from splunk.com.
+3-Select Splunk Enterprise version or universal forwarder Linux versions pulled from 
 
-4-Adjust any user permissions on $SPLUNK_HOME required.
+--> https://www.splunk.com/en_us/download/previous-releases/universalforwarder.html
+--> https://www.splunk.com/en_us/download/universal-forwarder.html
+
+-->https://www.splunk.com/en_us/download/previous-releases.html
+-->https://www.splunk.com/en_us/download/splunk-enterprise.html
+
+This will create two files depending on the type of installation: uf_Repo.txt or enterprise_Repo.txt
+
+4- It will adjust any user permissions on $SPLUNK_HOME if required.
 
 5-Start Splunk (it will prompt for the admin user and password), *license will be accepted automatically.
 
@@ -24,15 +36,15 @@ Basically you just run it on your Linux Box. After that the funcionality breaks 
 
 # notes
 
-Unfortunately for now, there is no direct way to download the latest splunk version, working for now on how to add a feature that allows you to specify the url more interactively.
-
-It downloads latest Splunk version as of 11/03/20.
+There is new funcionality that pulls versions and downloads links from the official splunk urls :)
 
 It has been tested on ubuntu and CentOS. * On ubuntu run as bash splunkInstall.sh rather than sh splunkInstall.sh.
 
 *Check that $user env variable is set accordingly.
 
 *Make sure splunkInstall.sh and include.sh are both on the same directory.
+
+*Splunk installation location is /opt/splunk, if prior to using this script you have Splunk on anothe location make sure to either delete or move it.
 
 
 # Contribute
