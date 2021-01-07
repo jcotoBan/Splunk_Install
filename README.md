@@ -50,7 +50,7 @@ It has been tested on ubuntu and CentOS. * On ubuntu run as bash splunkInstall.s
 
 *Make sure splunkInstall.sh and include.sh are both on the same directory.
 
-*Splunk installation location is /opt/splunk, if prior to using this script you have Splunk on anothe location make sure to either delete or move it.
+*Splunk installation location is /opt/splunk, if prior to using this script you have Splunk on another location make sure to either delete or move it.
 
 
 # Contribute
