@@ -1,19 +1,18 @@
 
 splunkInstall(){
 
-		source ./repoGenerator.sh
+		source ./helpers/repoGenerator.sh
 
 		if [ $1 = 'UF' ]; then
 
 			printf "\nUniversal Forwarder installation\n"
 
-
-			printf "\nSplunk UF Available Versions: \n\n"
-
 			uf_RepoGenerator
 
 			printf "\n"
 			printf "\n"
+
+			printf "\nSplunk UF Available Versions: \n\n"
 
 			grep "data-version" uf_Repo.txt | uniq | grep -P '\d.+\d' -o | sed '$!N;$!N;s/\n/ <-------> /g'
 
@@ -54,6 +53,9 @@ splunkInstall(){
     	printf "\n\nEnterprise installation\n"
 
 			ent_RepoGenerator
+
+			printf "\n"
+			printf "\n"
 
 			printf "\nSplunk Available Versions: \n\n"
 
