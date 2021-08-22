@@ -52,6 +52,8 @@ It has been tested on ubuntu and CentOS. * On ubuntu run as bash splunkInstall.s
 
 *Splunk installation location is /opt/splunk, if prior to using this script you have Splunk on another location make sure to either delete or move it.
 
+*It only downloads the tgz files from the repo, if an option for other kind of bins would be useful, please let me know.
+
 
 # Contribute
 
