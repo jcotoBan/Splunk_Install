@@ -57,7 +57,7 @@ It has been tested on ubuntu and CentOS. * On ubuntu run as bash splunkInstall.s
 
 # Contribute
 
-If you want to contribute with a feature, request a new feature for enhancement or fix any bug just write an email to jcotsan@gmail.com, on the subject line please set "SPLUNK INSTALL REPO - CONTRIBUTE", otherwise your message will be ignored.You can send your pull requests directly as well.
+If you want to contribute with a feature, request a new feature for enhancement or fix any bug just write an email to jcotsan@gmail.com, on the subject line please set "SPLUNK INSTALL REPO - CONTRIBUTE", otherwise your message could be ignored.You can send your pull requests directly as well.
 
 
 
